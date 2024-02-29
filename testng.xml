@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OpenCart eCommerce Application">
+
+    <listeners>
+        <listener class-name="utilities.Reporting"/>
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="OpenCart">
+
+        <!--        <parameter name="browser" value="firefox"/>-->
+        <classes>
+
+            <class name="testCases.admin.TC_001_Admin_Login"/>
+            <class name="testCases.admin.TC_002_Admin_Login_DDT"/>
+            <class name="testCases.admin.TC_003_Admin_Invalid_Login"/>
+            <class name="testCases.admin.TC_004_Admin_Navigate_ToLandingPage"/>
+            <class name="testCases.admin.TC_005_CheckAllLinks"/>
+            <class name="testCases.admin.TC_006_Update_Account"/>
+
+
+            <class name="testCases.user.TC_001_Customer_Registration"/>
+            <class name="testCases.user.TC_002_Customer_Registration_DDT"/>
+            <class name="testCases.user.TC_003_Customer_Login"/>
+            <class name="testCases.user.TC_004_Customer_Login_DDT"/>
+            <class name="testCases.user.TC_005_Place_An_Order"/>
+            <class name="testCases.user.TC_013_AboutUs"/>
+            <class name="testCases.user.TC_014_Delivery_Information"/>
+            <class name="testCases.user.TC_006_PrivacyPolicy"/>
+            <class name="testCases.user.TC_007_TermsAndConditions"/>
+            <class name="testCases.user.TC_008_Contact_Us_Inquiry"/>
+            <class name="testCases.user.TC_009_Change_Password"/>
+            <class name="testCases.user.TC_010_AddToWishList"/>
+            <class name="testCases.user.TC_011_Search_Items"/>
+            <class name="testCases.user.TC_012_Forgot_Password"/>
+            <class name="testCases.user.TC_015_Check_All_Links"/>
+
+        </classes>
+    </test>
+</suite>
